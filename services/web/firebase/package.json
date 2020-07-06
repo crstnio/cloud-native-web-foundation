@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "firebase:login": "firebase login",
     "firebase:login:remote": "firebase login --no-localhost",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "dev": "firebase serve"
   },
   "author": "Carsten Jaksch, @crstnio",
   "license": "ISC",
