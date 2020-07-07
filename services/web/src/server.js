@@ -22,12 +22,12 @@ const devFirebaseServe = (req, res, next) => {
 };
 
 polka() // You can also use Express
-	.use(
-		compression({ threshold: 0 }),
+  .use(
+    compression({ threshold: 0 }),
         sirv('static', { dev }),
         devFirebaseServe,
-		sapper.middleware()
-	)
-	.listen(PORT, err => {
-		if (err) console.log('error', err);
-	});
+        sapper.middleware()
+  )
+  .listen(PORT, err => {
+    if (err) console.log('error', err);
+  });

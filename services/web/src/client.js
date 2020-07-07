@@ -4,5 +4,5 @@ import { initFeatureToggles } from './feature-toggles';
 initFeatureToggles();
 
 sapper.start({
-	target: document.querySelector('#sapper')
+  target: document.querySelector('#sapper')
 });
